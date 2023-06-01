@@ -22,45 +22,43 @@
         <button class = "nav-button" onclick="hamburger()">
             <svg viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <g filter="url(#filter0_d_186_212)">
-                    <circle cx="21.5" cy="17.5" r="17.5" fill="#fff" />
+                <circle cx="21.5" cy="17.5" r="17.5" fill="#fff" />
                 </g>
                 <path d="M14 13H29.3914" stroke="#4541f1" stroke-width="3" stroke-linecap="round" />
                 <path d="M14 17.2754H29.3914" stroke="#4541f1" stroke-width="3" stroke-linecap="round" />
                 <path d="M14 21.5508H29.3914" stroke="#4541f1" stroke-width="3" stroke-linecap="round" />
                 <defs>
-                    <filter id="filter0_d_186_212" x="0" y="0" width="43" height="43" filterUnits="userSpaceOnUse"
-                        color-interpolation-filters="sRGB">
-                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                            result="hardAlpha" />
-                        <feOffset dy="4" />
-                        <feGaussianBlur stdDeviation="2" />
-                        <feComposite in2="hardAlpha" operator="out" />
-                        <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
-                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_186_212" />
-                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_186_212" result="shape" />
-                    </filter>
+                <filter id="filter0_d_186_212" x="0" y="0" width="43" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                <feOffset dy="4" />
+                <feGaussianBlur stdDeviation="2" />
+                <feComposite in2="hardAlpha" operator="out" />
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_186_212" />
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_186_212" result="shape" />
+                </filter>
                 </defs>
             </svg>
         </button>
         <button id="reset" class = "nav-button" style= "display: none;">
             <svg viewBox="0 0 43 43" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g filter="url(#filter0_d_186_219)">
-            <circle cx="21.5" cy="17.5" r="17.5" fill="#fff">
-            </g>
-            <path d="M25 25L18 17.5L25 10" stroke="#4541f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs>
-            <filter id="filter0_d_186_219" x="0" y="0" width="43" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-            <feOffset dy="4"/>
-            <feGaussianBlur stdDeviation="2"/>
-            <feComposite in2="hardAlpha" operator="out"/>
-            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_186_219"/>
-            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_186_219" result="shape"/>
-            </filter>
-            </defs>
+                <g filter="url(#filter0_d_186_219)">
+                <circle cx="21.5" cy="17.5" r="17.5" fill="#fff">
+                </g>
+                <path d="M25 25L18 17.5L25 10" stroke="#4541f1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                <defs>
+                <filter id="filter0_d_186_219" x="0" y="0" width="43" height="43" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                <feOffset dy="4"/>
+                <feGaussianBlur stdDeviation="2"/>
+                <feComposite in2="hardAlpha" operator="out"/>
+                <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_186_219"/>
+                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_186_219" result="shape"/>
+                </filter>
+                </defs>
             </svg>
         </button>
     </div>
@@ -71,8 +69,6 @@
     <div style="display: block;" id="mySidebar" >
         <form  method="post" id="form">
 
-                    <!-- <input onchange="activeSearchBtn()" type="text" name="periodo" id="periodo" list="list_per"
-                        placeholder="PERIODO"><br> -->
                     <div class="row">
                         <label for="periodo">Periodo</label>
                         <select id="periodo" class="form-select" onchange="setCounter()">
@@ -95,8 +91,6 @@
 
                     <hr class = "inputs-separator">
 
-                    <!-- <input onchange="activeSearchBtn()" type="text" name="citta" id="citta" list="list_cit"
-                        placeholder="CITTA'"><br><br> -->
                     <div class="row">
                         <label for="periodo">Città</label>
                         <select id="citta" class="form-select" onchange="setCounter()">
@@ -107,8 +101,7 @@
                     </div>
 
                     <hr class = "inputs-separator">
-                    <!-- <input onchange="activeSearchBtn()" type="text" name="categoria" id="categoria" list="list_cat"
-                        placeholder="CATEGORIA"><br> -->
+ 
                     <div class="row">
                         <label for="periodo">Categoria</label>
                         <select id="categoria" class="form-select" name="list_cat" onchange="setCounter()">

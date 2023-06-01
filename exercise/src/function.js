@@ -72,7 +72,7 @@ async function resultForm(categoria,periodo,regione,citta){
 
     var result = []
     if(Object.keys(data).length === 0){
-        result = 'No results'
+            result.push('No results')
     }else{
         for (let i = 0; i < Object.keys(data).length; i++) {
             result.push(data[i]['name_conference']);
@@ -83,36 +83,37 @@ async function resultForm(categoria,periodo,regione,citta){
 
 async function changeInfoConf(event){
     var input = event.target.innerText.replace(" ","%20")
-    hamburger()
+    if (input.replace("%20"," ") != 'No results') {
+        
+        hamburger()
+        
+        var url = 'http://127.0.0.1:8000/allfiere/q=name_conference='+input+'';
+        var data;
+        const res = await fetch(url)
+        data= await res.json()
+
+
+        input = input.replace("%20"," ")
+
+        var name_conference = data[input]['name_conference'];
+        var city = data[input]['city'];
+        var address = data[input]['address']; 
+        var date = data[input]['date'];
+        var website = data[input]['website'];
     
-    var url = 'http://127.0.0.1:8000/allfiere/q=name_conference='+input+'';
-    var data;
-    const res = await fetch(url)
-    data= await res.json()
-
-
-    input = input.replace("%20"," ")
-
-    var name_conference = data[input]['name_conference'];
-    var regione = data[input]['regione'];
-    var city = data[input]['city'];
-    var address = data[input]['address']; 
-    var date = data[input]['date'];
-    var website = data[input]['website'];
- 
-    document.getElementById("name").innerHTML =name_conference;
-    document.getElementById("1").innerHTML ='Città';
-    document.getElementById("1_a").innerHTML ='<strong>'+city+'</strong>';
- 
-    document.getElementById("2").innerHTML ='Indirizzo';
-    document.getElementById("2_a").innerHTML ='<strong>'+address+'</strong>';
- 
-    document.getElementById("3").innerHTML ='Periodo';
-    document.getElementById("3_a").innerHTML ='<strong>'+date+'</strong>';
- 
-    document.getElementById("4").innerHTML ='Sito Web';
-    document.getElementById("4_a").innerHTML = '<a href="'+website+' " target="_blank">'+'<strong>'+website+'</strong>'+'</a>';
-
+        document.getElementById("name").innerHTML =name_conference;
+        document.getElementById("1").innerHTML ='Città';
+        document.getElementById("1_a").innerHTML ='<strong>'+city+'</strong>';
+    
+        document.getElementById("2").innerHTML ='Indirizzo';
+        document.getElementById("2_a").innerHTML ='<strong>'+address+'</strong>';
+    
+        document.getElementById("3").innerHTML ='Periodo';
+        document.getElementById("3_a").innerHTML ='<strong>'+date+'</strong>';
+    
+        document.getElementById("4").innerHTML ='Sito Web';
+        document.getElementById("4_a").innerHTML = '<a href="'+website+' " target="_blank">'+'<strong>'+website+'</strong>'+'</a>';
+    }
 }
 
 var counter = 0;

@@ -13,14 +13,14 @@ $type=$connessione->real_escape_string($_REQUEST['type']);
 // $map=$connessione->real_escape_string($_REQUEST['3dmap']);
 // $download_map=$connessione->real_escape_string($_REQUEST['mappdf']);
 
-$sql= "INSERT INTO fiere(
-            name_conference,
-            regione,
-            city,
-            address,
-            date,
-            website,
-            type) 
+$sql= "INSERT INTO `fiere`(
+            `name_conference`,
+            `regione`,
+            `city`,
+            `address`,
+            `date`,
+            `website`,
+            `type`) 
         VALUES
             ('$name_conference',
             '$regione',
