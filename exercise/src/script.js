@@ -20,7 +20,9 @@ const sizes = {
 
 // Camera
 const camera = new THREE.PerspectiveCamera(75, window.innerWidth/window.innerHeight, 0.1, 100)
-camera.position.z = 5
+camera.position.z = 3
+camera.position.y = 4
+camera.position.x = 2
 
 scene.add(camera)
 
@@ -98,6 +100,8 @@ const loader = new GLTFLoader()
     {    
         pad28 = glb.scene
         scene.add(pad28)
+        pad28.position.x = 1
+        pad28.position.z = 1
     }
 )
 
@@ -107,6 +111,8 @@ loader.load(
   {    
     collegamentoPad = glb.scene
     scene.add(collegamentoPad)
+    collegamentoPad.position.x = 1
+    collegamentoPad.position.z = 1
   }
 )
 
@@ -134,6 +140,8 @@ loader.load(
     {    
         pad29 = glb.scene
         scene.add(pad29)
+        pad29.position.x = 1
+        pad29.position.z = 1
     }
 )
 
@@ -201,6 +209,8 @@ loader.load(
   {    
       ingressoNord29 = glb.scene
       scene.add(ingressoNord29)
+      ingressoNord29.position.x = 1
+      ingressoNord29.position.z = 1
   }
 )
 
@@ -272,6 +282,9 @@ canvas.addEventListener('mouseout', () => {
     scene.remove(bar)
     scene.remove(infoPoint)
     scene.remove(wc)
+    camera.position.z = 3
+    camera.position.y = 4
+    camera.position.x = 2
   });
 
   async function changeInfoPav(selectedObject){
@@ -315,7 +328,7 @@ canvas.addEventListener('mouseout', () => {
     document.getElementById("3_a").innerHTML ='<strong>' + n_pav_stand + '</strong>';
  
     document.getElementById("4").innerHTML ='Sito Web';
-    document.getElementById("4_a").innerHTML = '<strong><a href="'+website_stand+' " target="_blank">'+website_stand+'</a></strong>';
+    document.getElementById("4_a").innerHTML = '<strong><a style="word-wrap: break-word;" href="'+website_stand+' " target="_blank">'+website_stand+'</a></strong>';
 
     document.getElementById("5").style.display ='none';
     document.getElementById("5_a").innerHTML = descr_stand;
@@ -353,7 +366,7 @@ canvas.addEventListener('mouseout', () => {
             scene.add(wc)
             changeInfoPav(selectedObject)
         } 
-        else if(selectedObject.name == '143'){
+        else if(selectedObject.name == '143' || selectedObject.name == '154'|| selectedObject.name == '158' ){
           changeInfoStand(selectedObject)
           //console.log(selectedObject.name)
         }

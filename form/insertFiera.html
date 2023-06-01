@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://www.applied.it/favicon.ico">
+    <title>Inseririmento Fiere</title>
+</head>
+<body>
+    <div>
+        <label for="fiere">Inseririmento Fiere</label><br>
+        <form id='fiere' action="post/postFiere.php" target="_self" method="POST">
+        
+            <div>
+            <label for="name_conference">Nome Fiera</label><br>
+            <input type="text" name="name_conference" id="name_conference">
+            </div>
+
+            <div>
+            <label for="regione">Regione Fiera</label><br>
+            <input type="text" name="regione" id="regione">
+            </div>
+
+            <div>
+            <label for="city">Città Fiera</label><br>
+            <input type="text" name="city" id="city">
+            </div>
+
+            <div>
+            <label for="address">Indirizzo Fiera</label><br>
+            <input type="text" name="address" id="address">
+            </div>
+
+            <div>
+            <label for="date">Periodo Fiera</label><br>
+            <input type="text" name="date" id="date">
+            </div>
+
+            <div>
+            <label for="website">Sito Web Fiera</label><br>
+            <input type="text" name="website" id="website">
+            </div>
+
+            <div>
+            <label for="type">Genere della Fiera</label><br>
+            <input type="text" name="type" id="type">
+            </div>
+
+            <div>
+            <label for="3dmap">Inserire Mappa3D</label><br>
+            <input type="text" name="3dmap" id="3dmap">
+            </div>
+
+            <div>
+            <label for="mappdf">Inserire MappaPDF</label><br>
+            <input type="text" name="mappdf" id="mappdf">
+            </div>
+
+            <div>
+            <input type="submit" value="Invia">
+            </div><br>
+        </form>
+    </div>
+</body>
+</html>

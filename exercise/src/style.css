@@ -216,6 +216,10 @@ body{
     margin-bottom: unset;
     font-weight: 300;
   }
+
+  #descrizione{
+    width: unset;
+  }
   
   strong{
     font-weight: bold;
