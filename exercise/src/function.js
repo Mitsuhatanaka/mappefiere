@@ -85,6 +85,7 @@ async function formPost(){
     let risultati = document.createElement('p')
     risultati.setAttribute("id", "hrRisultati")
     risultati.innerText = "Risultati"
+
     
     regione = regione.replace(" ","%20")
     periodo = periodo.replace(" ","%20")

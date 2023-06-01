@@ -275,10 +275,12 @@ a{
   height: 3px;
   width: 34vw;
   position: absolute;
+  z-index: -1;
   left: 0;
   top:50%;
 }
 #hrRisultati:after {
+  z-index: -1;
   content: "";
   background-color: #fff;
   display: block;

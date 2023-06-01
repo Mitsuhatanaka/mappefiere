@@ -330,7 +330,7 @@ canvas.addEventListener('mouseout', () => {
     document.getElementById("4").innerHTML ='Sito Web';
     document.getElementById("4_a").innerHTML = '<strong><a style="word-wrap: break-word;" href="'+website_stand+' " target="_blank">'+website_stand+'</a></strong>';
 
-    document.getElementById("5").style.display ='none';
+    document.getElementById("5").innerHTML = '';
     document.getElementById("5_a").innerHTML = descr_stand;
  }
 
