@@ -306,20 +306,19 @@ canvas.addEventListener('mouseout', () => {
  
     document.getElementById("name").innerHTML =name_stand;
     document.getElementById("1").innerHTML ='Numero Stand';
-    document.getElementById("1_a").innerHTML =number_stand;
+    document.getElementById("1_a").innerHTML ='<strong>' + number_stand + '</strong>';
  
     document.getElementById("2").innerHTML ='Categoria';
-    document.getElementById("2_a").innerHTML =category_stand;
+    document.getElementById("2_a").innerHTML ='<strong>' + category_stand + '</strong>';
  
     document.getElementById("3").innerHTML ='Numero Padiglione';
-    document.getElementById("3_a").innerHTML =n_pav_stand;
+    document.getElementById("3_a").innerHTML ='<strong>' + n_pav_stand + '</strong>';
  
     document.getElementById("4").innerHTML ='Sito Web';
-    document.getElementById("4_a").innerHTML = '<a href="'+website_stand+' " target="_blank">'+website_stand+'</a>';
- 
+    document.getElementById("4_a").innerHTML = '<strong><a href="'+website_stand+' " target="_blank">'+website_stand+'</a></strong>';
+
     document.getElementById("5").style.display ='none';
-    document.getElementById("5_a").innerHTML =descr_stand;
-    
+    document.getElementById("5_a").innerHTML = descr_stand;
  }
 
   canvas.addEventListener('click', () => {

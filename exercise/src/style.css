@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Arimo:wght@400;500;600;700&family=IBM+Plex+Mono:ital,wght@0,300;0,400;0,500;0,700;1,700&family=Montserrat:wght@300;400;500;700&display=swap');
-
+@import 'animate.css';
 
 html{
   margin: 0;
@@ -14,20 +14,24 @@ body{
   padding-bottom: 5vh;
 }
 
+#mySidebar {
+  padding-bottom: 2vh;
+}
+
 /* navbar */
 
 .nav-button{
     background: transparent;
     border: 0px solid transparent;
-    width: 5cqw;
+    width: 3cqw;
+    padding: 0px;
   }
 
   #navbar-buttons {
     background-color: #4541f1;
-    padding: 2vw 2vh 2vw 2vh;
-    margin-left: 2vw;
+    padding: 3vh .5vw;
+    margin-left: 5vw;
     display: inline;
-    margin-top: 2vh;
     border: 0px solid transparent;
     border-radius: 50px;
   }
@@ -37,16 +41,6 @@ body{
 
   option{
     text-align: center;
-  }
-
-  aside{
-    /* 
-    border-color: #4541f1; */
-    float: right;
-    width: 20%;
-    height: 100%;
-    display:none;
-    margin-top: 8%; 
   }
 
   /* form */
@@ -121,6 +115,16 @@ body{
   .inputs-separator{
     border: 2px solid white;
   }
+
+  option {
+    color: white;
+    background-color: #8F8DF7;
+  }
+
+  select {
+    padding: 50px;
+  }
+
   /*Fine modifica form*/
 
 
@@ -203,6 +207,10 @@ body{
     justify-content: space-between;
   }
 
+  
+  .info-fiera-detail {
+    width: 15cqw;
+  }
 
   .info-fiera-detail p{
     margin-bottom: unset;
@@ -226,20 +234,56 @@ body{
 a{
   color: #fff;
 }
+
+/* risultati dinamici */
   
 #resultBtn button {
-  color: white;
+  background-color: transparent;
   text-decoration: none;
+  color: white;
   font-family: "Montserrat";
-  font-weight: bold;
-  border: 1px solid white;
-  padding: 1vw 3vw;
-  border-radius: 50px;
-  text-align: left;
-  background-color: #4541f1;
+  border: 0px solid transparent;
+  font-size: 2rem;
+  border-bottom: 2px solid white;
+  padding-bottom: 2vh;
+  font-weight: 300;
 }
 
 #resultBtn {
   margin: 10vh 10vw;
   text-align: left;
 }
+
+/* risultati */
+
+#hrRisultati {
+  color: #fff;
+  font-weight: 500;
+  font-family: 'Montserrat';
+  font-size: 2rem;
+  position: relative;
+  text-align: center;
+}
+#hrRisultati:before {
+  content: "";
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  width: 34vw;
+  position: absolute;
+  left: 0;
+  top:50%;
+}
+#hrRisultati:after {
+  content: "";
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  width: 34vw;
+  position: absolute;
+  right: 0;
+  top:50%;
+}
+
+
+
