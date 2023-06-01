@@ -81,6 +81,7 @@ async function formPost(){
     let regione = document.getElementById("regione").value;
     let citta = document.getElementById("citta").value;
     let btn =document.createElement('button') 
+    btn.setAttribute("class", "animate__tada")
     let risultati = document.createElement('p')
     risultati.setAttribute("id", "hrRisultati")
     risultati.innerText = "Risultati"
