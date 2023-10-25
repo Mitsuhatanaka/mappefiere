@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Creato il: Mag 30, 2023 alle 15:36
+-- Creato il: Giu 05, 2023 alle 11:48
 -- Versione del server: 10.4.28-MariaDB
 -- Versione PHP: 8.2.4
 
@@ -19,7 +19,10 @@ SET time_zone = "+00:00";
 
 --
 -- Database: `progetto_fiera`
---
+
+DROP SCHEMA IF EXISTS  progetto_fiera;
+CREATE SCHEMA progetto_fiera;
+USE progetto_fiera;
 
 -- --------------------------------------------------------
 
@@ -90,6 +93,8 @@ INSERT INTO `stand` (`n_stand`, `name_stand`, `category`, `description`, `n_pavi
 ('145', 'AMARO – TATTOOS', 'Tattoos', 'Empty', '21', 'https://www.instagram.com/amaro_tattoos/?hl=it'),
 ('148', 'CHLEXART & TOTE. ACKERMAN', NULL, NULL, '21', NULL),
 ('149', 'FANTASTICHE PACCOTTIGLIE', 'Accessori', NULL, '21', 'https://www.instagram.com/fantastiche.paccottiglie/?hl=it'),
+('154', 'PASTICCERIA LUFI', 'Alimentari', 'Pasticceria Siciliana', '29', 'pasticcerialufi.wixsite.com/foto'),
+('158', 'GELATIX', 'Alimentari', 'La produzione, il commercio, al minuto e all\'ingrosso, in forma fissa e ambulante, di prodotti alimentari e dolciumi, in particolare gelati; l\'esercizio di laboratorio artigianale; la somministrazione di pasti e l\'esercizio pubblico di bar e pasticceria.', '29', 'www.coobiz.it/azienda/vigevano-produzione-commercio/co1327570'),
 ('164', 'BAGIGIO STORE', 'Negozio vintage', NULL, '21', 'https://www.vinted.it/member/56873065-lauraalbiero\r\n'),
 ('170', 'GIOCATTOPOLI.COM', 'Giocattoli', 'Nasce dalla passione per i giocattoli. Nel 2015 abbiamo aperto il nostro negozio fisico a Roma, dove potete trovare migliaia di articoli come da nostro catalogo.', '21', 'https://www.giocattopoli.com/'),
 ('181', 'HUNTER GAMES', 'Fumetti', 'Carte, Playmat, Accessori da gioco, Action Figures, Funko Pop, Giochi da tavolo, Fumetti e tanto altro.', '21', 'https://www.facebook.com/Hunter.GamesCp.Official/'),

@@ -1,9 +1,17 @@
 {
     "scripts": {
-        "start":[
+        "startAPI":[
             "pip install fastapi",
             "pip install uvicorn",
-            "pip install mysql-connector-python"
+            "pip install mysql-connector-python",
+            "cd core",
+            "python posts.py"
+                                     
+        ],
+        "startNode":[
+            "cd exercise",
+            "cd node_modules",
+            "npm run dev"
         ]
   }
 }
